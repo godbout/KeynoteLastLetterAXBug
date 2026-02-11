@@ -9,6 +9,14 @@ import SwiftUI
 
 @main
 struct KeynoteLastLetterAXBugApp: App {
+    init() {
+        if AXIsProcessTrusted() == false {
+            let options: NSDictionary = [kAXTrustedCheckOptionPrompt.takeRetainedValue() as NSString: true]
+            
+            AXIsProcessTrustedWithOptions(options)
+        }
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()
