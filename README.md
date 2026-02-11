@@ -12,3 +12,5 @@ we're supposed to be able to select any character. works in any other app includ
 6. see that for Keynote, it is not possible to select the last character, for example. the APIs with selectedTextRange return success, but nothing happens, the last character is not selected
 
 # wonderful video
+
+https://github.com/user-attachments/assets/43db7ab1-92df-417f-97dc-82d38f45d0b3
